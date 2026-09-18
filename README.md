@@ -48,7 +48,18 @@ The complete analytics pipeline transforms raw data into meaningful business ins
 * 📊 Interactive Power BI dashboard
 * 💡 Business insights and recommendations
 
-The goal is to demonstrate how raw operational data can be transformed into **clear, actionable insights for business and logistics decision-making**.
+### 1. 🔴 Problem Statement
+
+Supply chain operations generate large amounts of shipment, logistics, vendor, product, delivery, and freight-cost data, but raw operational data is often difficult to interpret without proper cleaning and analysis. The key challenge in this project is to understand **where shipment activity is concentrated, which product groups and transportation modes dominate operations, how vendors differ in freight costs, and where delivery delays occur**. The objective is to transform the raw SCMS Delivery History dataset into meaningful operational insights that can support better logistics planning, vendor evaluation, transportation decisions, and supply chain management.
+
+### 2. 🔵 Approach
+
+The project follows an end-to-end **data analytics pipeline** beginning with the SCMS Delivery History dataset containing **10,324 shipments and 33 features**. Python and Pandas are used to inspect, clean, transform, and prepare the raw data, including converting date and numeric fields into appropriate formats and handling missing and inconsistent values. Exploratory Data Analysis is then performed across **countries, vendors, product groups, shipment modes, delivery delays, and freight costs**. Matplotlib is used to generate analytical visualizations, while the cleaned dataset is exported for further analysis in Power BI. Finally, an interactive Power BI dashboard presents key supply chain KPIs and visual comparisons, allowing the analytical findings to be communicated through a business-oriented reporting layer.
+
+### 3. 🟢 Findings
+
+The analysis reveals several important patterns within the supply chain dataset. **South Africa** has the highest shipment volume with **1,406 shipments**, followed by Nigeria and Côte d'Ivoire. The **ARV product group** dominates the dataset, accounting for approximately **82.8% of shipments**, while **Air** is the most frequently used shipment mode at approximately **59%** of total shipments. The analysis also shows substantial variation in freight costs between vendors, indicating potential opportunities for vendor and logistics-cost optimization. Delivery-delay analysis highlights differences between transportation modes, while country, vendor, product-group, and monthly analysis reveal concentrated logistics activity and time-based patterns that can support improved transportation, procurement, and inventory planning.
+
 
 ---
 
